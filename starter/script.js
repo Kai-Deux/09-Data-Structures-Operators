@@ -100,7 +100,7 @@ planesInLine(12);
 
 
 
-/*
+
 const airline = 'TAP Air Portugal';
 
 console.log(airline.toLowerCase());
@@ -161,9 +161,8 @@ const checkBaggage = function (items) {
 checkBaggage('I have a laptop, some Food and a pocket Knife');
 checkBaggage('Socks and camera');
 checkBaggage('Got some snacks and a gun for protection');
-*/
 
-/*
+
 const airline = 'TAP Air Portugal';
 const plane = 'A320';
 
@@ -205,9 +204,7 @@ console.log( new String('Kai'));
 console.log(typeof new String('Kai'));
 
 console.log(typeof new String('Kai').slice(1));
-*/
 
-/*
 const question = new Map([
   ['question', 'What is the best progamming language in the world?'],
   [1, 'C'],
@@ -240,9 +237,7 @@ console.log([...question]);
 //console.log(question.entries());
 console.log([...question.keys()]);
 console.log([...question.values()]);
-*/
 
-/*
 const rest = new Map();
 rest.set('name', 'Classico Italiano');
 rest.set(1, 'Firenzo, Italy');
@@ -274,9 +269,7 @@ console.log(rest);
 console.log(rest.size);
 
 console.log(rest.get(arr));
-*/
 
-/*
 const orderedSet = new Set([
   'Pasta',
   'Pizza',
@@ -309,9 +302,7 @@ console.log(
 );
 
 console.log(new Set('Rohisharamauthar').size);
-*/
 
-/*
 const game = {
   team1: 'Bayern Munich',
   team2: 'Borrussia Dortmund',
@@ -371,9 +362,7 @@ for (const [team, odd] of Object.entries(game.odds)) {
   const teamStr = team === 'x' ? 'draw' : `victory ${game[team]}`;
   console.log(`Odd of ${teamStr} ${odd}`);
 }
-*/
 
-/*
 // Property NAMES
 const properties = Object.keys(openingHours);
 console.log(properties);
@@ -397,9 +386,7 @@ const entries = Object.entries(openingHours);
 for (const [day, { open, close}] of entries) {
   console.log(` On ${day} we open at ${open} and close at ${close}`);
 }
-*/
 
-/*
 if (restaurant.openingHours && restaurant.openingHours.mon)
   console.log(restaurant.openingHours.mon.open);
 
@@ -418,6 +405,7 @@ for (const day of days) {
 }
 
 // Methods
+
 console.log(restaurant.order?.(0, 1) ?? 'Method does  not exist');
 console.log(restaurant.orderRisotto?.(0,1) ?? 'Method does not exist');
 
@@ -428,9 +416,7 @@ const users =
 console.log(users[0]?.name ?? 'User array empty');
   
 if(users.length > 0) console.log(users[0].name); else console.log('user array empty');
-/*
 
-/*
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 
 for (const item of menu) console.log(item);
@@ -440,9 +426,7 @@ for (const [i, el] of menu.entries()) {
 }
 
 //console.log(...menu.entries());
-*/
 
-/*
 // 107
 restaurant.numGuests = 0;
 const guests = restaurant.numGuests || 10;
@@ -639,9 +623,7 @@ console.log(i, j, k);
 // Default values
 const [p=1, q=1, r=1] = [8,9];
 console.log(p, q, r);
-*/
 
-/*
 // 1
 const [players1, players2] = game.players;
 console.log(players1, players2);
@@ -674,9 +656,8 @@ printGoals(...game.scored);
 //7.
 team1 < team2 && console.log('Team 1 is more likely to win');
 team1 > team2 && console.log('Team 2 is more likely to win');
-*/
 
-/*
+
 const gameEvents = new Map([
   [17, '⚽ GOAL'],
   [36, '💫 Substitution'],
@@ -709,4 +690,3 @@ for (const [min, event] of gameEvents) {
   const half = min <= 45 ? 'FIRST' : 'SECOND';
   console.log(`[${half}] ${min}: ${event}`);
 }
-*/
